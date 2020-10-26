@@ -621,9 +621,9 @@ body {
 
 /* -------------------------- MEDIA QUERIES ---------------------------- */
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1350px) {
   body {
-    font-size: 18px;
+    font-size: 17.5px;
   }
 }
 
