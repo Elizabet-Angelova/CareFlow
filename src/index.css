@@ -587,7 +587,7 @@ body {
 }
 
 .fade-out {
-  animation: fadeout 2.7s ease-in-out;
+  animation: fadeout 3s ease-in-out;
 }
 
 @keyframes fadeout {
