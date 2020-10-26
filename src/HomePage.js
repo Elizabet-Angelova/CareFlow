@@ -9,7 +9,7 @@ const HomePage = () => {
     return (
         <>
         {formVisible && <Form />}
-        <div className='home-page-container'>
+        <div className='home-page-container' id='home'>
             <div className='home-page-text-content'>
                 <img src='/care-black.png' alt='CareFlow' />
                 <div className='green-subheading'>Консултации за ментално здраве</div>
