@@ -89,13 +89,13 @@ const Form = () => {
 
     const getClassNames = (prop) => {
         let classes = '';
-        if (data[prop].touched) {
+        if (data[prop].touched && onceSumbited) {
             classes += ' touched '
         }
-        if (data[prop].valid) {
+        if (data[prop].valid && onceSumbited) {
             classes += ' valid ';
         }
-        if (data[prop].touched && !data[prop].valid) {
+        if (data[prop].touched && !data[prop].valid && onceSumbited) {
             classes += ' invalid ';
         } else {
             classes += ''
@@ -111,9 +111,7 @@ const Form = () => {
 
         ],
         phone: [
-            value => value?.length >= 10 || 'Телефонният номер трябва да е поне 10 символа.',
-            value => /^[0-9]]{0,1}[\s0-9]*$/.test(value) || 'Моля въведете валиден телефонен номер.',
-            value => /^[^<>%$#&@*-/._@!?^=`'"]*$/.test(value) || 'Моля въведете валиден телефонен номер.',
+            value => /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/.test(value) || 'Моля въведете валиден телефонен номер.',
         ],
         email: [
             value => /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value) || 'Моля въведете валиден имейл адрес.',

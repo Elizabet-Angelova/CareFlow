@@ -621,6 +621,12 @@ body {
 
 /* -------------------------- MEDIA QUERIES ---------------------------- */
 
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   body {
     font-size: 13px;

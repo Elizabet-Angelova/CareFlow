@@ -16,7 +16,7 @@ function App() {
 
   setTimeout(() => {
     setLoading(false)
-  }, 2700)
+  }, 5000)
 
   return (
     <FormContext.Provider value={{ formVisible, setFormVisible }}>
