@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
 import FormContext from './Context/FormContext';
+import MenuContext from './Context/MenuContext';
 import Navigation from './Navigation';
 
 const StickyBar = () => {
-    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const { menuIsOpen, setMenuIsOpen} = useContext(MenuContext)
     const {formVisible, setFormVisible} = useContext(FormContext)
 
     return ( 

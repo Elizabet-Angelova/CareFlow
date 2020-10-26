@@ -457,6 +457,10 @@ body {
   font-size: 1.1em;
 }
 
+.loader-text {
+  font-size: 2.5em;
+}
+
 .email-phone-holder {
   color: white;
   margin-top: 2em;
@@ -838,5 +842,8 @@ body {
     padding: 1em 1em 3em 1em;
     height: fit-content;
     overflow-y: scroll;
+  }
+  .loader-text {
+    font-size: 2em;
   }
 }
