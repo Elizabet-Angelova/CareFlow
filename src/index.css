@@ -569,7 +569,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 4px solid var(--green);
+  border-left: 4px solid var(--green);
   position: absolute;
   border-radius: 100px; 
   width: 11em;
@@ -587,14 +587,14 @@ body {
 }
 
 .fade-out {
-  animation: fadeout 2s ease-in-out;
+  animation: fadeout 2.7s ease-in-out;
 }
 
 @keyframes fadeout {
   0% {
     opacity: 1;
   }
-  50% {
+  60% {
     opacity: 1;
   }
   100% {
