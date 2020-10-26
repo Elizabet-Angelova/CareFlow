@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import FormContext from './Context/FormContext';
+import Expect from './Expect';
+import ForWho from './ForWho';
 import HomePage from './HomePage';
+import Loader from './Loader';
 import StickyBar from './StickyBar';
 
 function App() {
@@ -15,12 +18,12 @@ function App() {
   return (
     <FormContext.Provider value={{ formVisible, setFormVisible }}>
     <>
-    {/* {loading && <Loader />} */}
+    {loading && <Loader />}
     <StickyBar />
     <HomePage />
-    {/* <ForWho />
+    <ForWho />
     <Expect />
-    <Services />
+    {/* <Services />
     <AboutUs />
     <Footer /> */}
     </>
