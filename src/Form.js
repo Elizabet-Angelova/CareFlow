@@ -12,6 +12,7 @@ const Form = () => {
     const [failRequest, setFailRequest] = useState(false)
     const [onceSumbited, setOnceSubmited] = useState(false)
     const [emtyFields, setEmptyFields] = useState(false)
+    const [buttonLoader, setButtonLoader] = useState(false)
 
 
     const [data, setData] = useState({
@@ -59,6 +60,7 @@ const Form = () => {
 
     const saveHour = () => {
         setOnceSubmited(true)
+        setButtonLoader(true)
 
         if (!validateForm()) {
             send("service_180772", "template_9dfi68m", {
@@ -69,14 +71,19 @@ const Form = () => {
             })
                 .then((response) => {
                     console.log('SUCCESS!');
+                    setEmptyFields(false)
                     setSucessRequest(true)
+                    setButtonLoader(false)
                 }).catch(error => {
                     console.log('FAIL');
+                    setEmptyFields(false)
                     setFailRequest(true)
+                    setButtonLoader(false)
                 });
 
         } else {
             setEmptyFields(true)
+            setButtonLoader(false)
         }
     }
 
@@ -124,8 +131,8 @@ const Form = () => {
                     <div className='close-icon-holder'><i onClick={() => setFormVisible(!formVisible)} className='fa fa-times'></i></div>
 
 
-                    {sucessRequest && <div style={{marginBottom: '2em', fontWeight: 'bold', color: 'green' }}>Успешно запазихте час! Наш консултант ще се свърже с вас за потвърждение.</div>}
-                    {failRequest && <div style={{marginBottom: '2em', fontWeight: 'bold', color: 'rgb(196, 0, 0)' }}>Нещо се обърка! Моля опитайте по-късно.</div>}
+                    {sucessRequest && <div style={{ marginBottom: '2em', fontWeight: 'bold', color: 'green' }}>Успешно запазихте час! Наш консултант ще се свърже с вас за потвърждение.</div>}
+                    {failRequest && <div style={{ marginBottom: '2em', fontWeight: 'bold', color: 'rgb(196, 0, 0)' }}>Нещо се обърка! Моля опитайте по-късно.</div>}
                     <div className={`form-content-container ${sucessRequest || failRequest ? 'displayNone' : ''}`} >
                         <div className='inputs-holder'>
                             <Input
@@ -167,7 +174,9 @@ const Form = () => {
                     </div>
 
                     {emtyFields && <div style={{ fontSize: '0.8em', color: 'rgb(196, 0, 0)' }}>Моля попълнете коректно всички полета.</div>}
-                    <Button label='ЗАПАЗИ ЧАС' style={{ marginBottom: '2em' }} onClick={saveHour} className={`${sucessRequest || failRequest ? 'displayNone' : ''}`} />
+                    {buttonLoader
+                        ? <div style={{ marginBottom: '1.5em', marginTop: '1em', fontSize: '1.3em', fontWeight: 'bold', color: 'var(--green)' }}>Зареждане...</div>
+                        : <Button label='ЗАПАЗИ ЧАС' style={{ marginBottom: '2em' }} onClick={saveHour} className={`${sucessRequest || failRequest ? 'displayNone' : ''}`} />}
                     <div style={{ display: 'flex', paddingRight: '1em' }}>
                         <div className='the-easiest-way-to-contact-us-text' style={{ padding: 0, textAlign: 'left', lineHeight: '1.3em', width: '80%', fontSize: '0.85em' }}>
                             Най-бързия и лесен начин да запазите час е като ни пишете във <a target="blank" href='https://www.facebook.com/CareFlowConsulting'>Фейсбук страницата на CareFlow </a>
