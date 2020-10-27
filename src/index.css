@@ -732,6 +732,7 @@ body {
     z-index: -5;
   }
   .column {
+    padding-top: 1em;
     padding-right: 0;
   }
   .title-and-img-holder {
@@ -789,6 +790,7 @@ body {
     row-gap: 10vh;
   }
   .service-container {
+    padding-top: 1em;
     border-bottom: 1px solid rgb(77, 131, 33, 0.4);
   }
   .about-page-container {
@@ -807,6 +809,9 @@ body {
     display: block;
     margin-top: 1.2em;
     text-align: center;
+  }
+  .my-image {
+    width: 30vw;
   }
   .footer-menu {
     display: none;
