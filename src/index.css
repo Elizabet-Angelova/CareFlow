@@ -495,7 +495,6 @@ body {
   font-weight: bold;
 }
 
-
 .input {
   box-sizing: border-box;
   margin: 0.3em 0 0.3em 0;
@@ -568,17 +567,21 @@ body {
   display: none;
 }
 
-
 .loader-circle {
   display: flex;
   justify-content: center;
   align-items: center;
   border-left: 4px solid var(--green);
   position: absolute;
-  border-radius: 100px; 
+  border-radius: 100px;
   width: 11em;
   height: 11em;
-  animation: load 1s infinite linear;
+  animation: load 1s linear infinite ;
+}
+
+.loader-image {
+  width: 10vw;
+  position: absolute;
 }
 
 @keyframes load {
@@ -605,23 +608,6 @@ body {
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------------- MEDIA QUERIES ---------------------------- */
 
@@ -848,7 +834,7 @@ body {
     height: fit-content;
     overflow-y: scroll;
   }
-  .loader-text {
-    font-size: 1.5em;
+  .loader-image {
+    width: 25vw;
   }
 }
