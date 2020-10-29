@@ -176,7 +176,7 @@ const Form = () => {
                         ? <div style={{ marginBottom: '1.5em', marginTop: '1em', fontSize: '1.3em', fontWeight: 'bold', color: 'var(--green)' }}>Зареждане...</div>
                         : <Button label='ЗАПАЗИ ЧАС' style={{ marginBottom: '2em' }} onClick={saveHour} className={`${sucessRequest || failRequest ? 'displayNone' : ''}`} />}
                     <div style={{ display: 'flex', paddingRight: '1em' }}>
-                        <div className='the-easiest-way-to-contact-us-text' style={{ padding: 0, textAlign: 'left', lineHeight: '1.3em', width: '80%', fontSize: '0.85em' }}>
+                        <div className='the-easiest-way-to-contact-us-text' style={{ padding: 0, textAlign: 'left', lineHeight: '1.3em', width: '80%', fontSize: '0.85em', fontFamily: 'Century Gothic, sans-serif' }}>
                             Най-бързия и лесен начин да запазите час е като ни пишете във <a target="blank" href='https://www.facebook.com/CareFlowConsulting'>Фейсбук страницата на CareFlow </a>
                 или чрез позвъняване на +359 878 971 776.
             </div>
