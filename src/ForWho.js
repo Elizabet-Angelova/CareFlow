@@ -4,9 +4,9 @@ const ForWho = () => {
     return (
         <div className='forwho-page-container' id='forWho'>
             <div className='title-and-img-holder'>
-            <img src='/za-kogo-sa-konsultaciite.jpg' alt='image' className='for-who-image' />
-            <div className='green-title'>ЗА КОГО СА ПОДХОДЯЩИ КОНСУЛТАЦИИТЕ?</div>
-            <img src='/za-kogo-sa-konsultaciite.jpg' alt='image' className='for-who-image-resp' />
+                <img src='/za-kogo-sa-konsultaciite.jpg' alt='image' className='for-who-image' />
+                <div className='green-title'>ЗА КОГО СА ПОДХОДЯЩИ КОНСУЛТАЦИИТЕ?</div>
+                <img src='/za-kogo-sa-konsultaciite.jpg' alt='image' className='for-who-image-resp' />
             </div>
             <div className='regular-text'>
                 Абсолютно всеки от нас би имал какво да си вземе от целенасочен разговор с интересен събеседник.

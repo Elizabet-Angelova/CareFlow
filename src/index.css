@@ -130,6 +130,8 @@ body {
   margin-bottom: 2.8em;
   margin-top: 0.4em;
   background-color: var(--green);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.17);
   width: fit-content;
   height: fit-content;
   font-size: 1.3em;
@@ -139,7 +141,6 @@ body {
   letter-spacing: 0.08em;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
-  border-radius: 1px;
 }
 
 .green-button:hover {
@@ -841,4 +842,26 @@ body {
   .loader-image {
     width: 25vw;
   }
+}
+
+#wave {
+  position: absolute;
+  width: 120vw;
+  opacity: 0.08;
+  z-index: -3;
+  transform: rotate(20deg);
+  top: 160vh;
+  left: -10vw;
+
+}
+
+#wave2 {
+  position: absolute;
+  width: 130vw;
+  opacity: 0.08;
+  z-index: -3;
+  transform: rotate(150deg);
+  top: 340vh;
+  left: -13vw;
+
 }

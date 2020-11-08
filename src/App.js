@@ -25,6 +25,8 @@ function App() {
     <MenuContext.Provider value={{ menuIsOpen, setMenuIsOpen }}>
     <>
     {loading && <Loader />}
+    <img src='/wave.png' id='wave'/>
+    <img src='/wave.png' id='wave2'/>
     <StickyBar />
     <HomePage />
     <ForWho />
