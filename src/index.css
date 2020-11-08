@@ -614,6 +614,28 @@ body {
   }
 }
 
+#wave {
+  position: absolute;
+  width: 120vw;
+  opacity: 0.08;
+  z-index: -3;
+  transform: rotate(20deg);
+  top: 160vh;
+  left: -10vw;
+
+}
+
+#wave2 {
+  position: absolute;
+  width: 130vw;
+  opacity: 0.08;
+  z-index: -3;
+  transform: rotate(150deg);
+  top: 340vh;
+  left: -13vw;
+
+}
+
 /* -------------------------- MEDIA QUERIES ---------------------------- */
 
 @media screen and (min-width: 1350px) {
@@ -842,26 +864,9 @@ body {
   .loader-image {
     width: 25vw;
   }
+
+  #wave2 {
+    top: 800vh;
+  }
 }
 
-#wave {
-  position: absolute;
-  width: 120vw;
-  opacity: 0.08;
-  z-index: -3;
-  transform: rotate(20deg);
-  top: 160vh;
-  left: -10vw;
-
-}
-
-#wave2 {
-  position: absolute;
-  width: 130vw;
-  opacity: 0.08;
-  z-index: -3;
-  transform: rotate(150deg);
-  top: 340vh;
-  left: -13vw;
-
-}
