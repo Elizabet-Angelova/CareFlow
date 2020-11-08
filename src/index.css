@@ -865,8 +865,8 @@ body {
     width: 25vw;
   }
 
-  #wave2 {
-    top: 800vh;
+  #wave2, #wave {
+    display: none;
   }
 }
 
