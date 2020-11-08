@@ -62,7 +62,7 @@ const Services = () => {
                 </div>
 
             </div>
-            <div className='regular-text' style={{fontSize: '0.8em'}}>Плащанията за онлайн консултациите се осъществяват по банков път</div>
+            <div className='regular-text' style={{fontSize: '0.8em'}}>Плащанията за онлайн консултациите се осъществяват по банков път или чрез паричен превод през Спиди/Еконт.</div>
         </div>
     );
 }
