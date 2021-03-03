@@ -397,6 +397,7 @@ body {
 .my-image {
   width: 15vw;
   margin-top: 2vh;
+  filter: grayscale(100%);
 }
 
 .about-content {
@@ -617,7 +618,7 @@ body {
 #wave {
   position: absolute;
   width: 120vw;
-  opacity: 0.08;
+  opacity: 0.05;
   z-index: -3;
   transform: rotate(20deg);
   top: 160vh;
@@ -628,7 +629,7 @@ body {
 #wave2 {
   position: absolute;
   width: 130vw;
-  opacity: 0.08;
+  opacity: 0.05;
   z-index: -3;
   transform: rotate(150deg);
   top: 340vh;

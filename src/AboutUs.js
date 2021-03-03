@@ -6,7 +6,7 @@ const AboutUs = () => {
             <div className='about-content'>
                 <div className='image-holder'>
                     <img src='/elizabet.jpg' alt='image' className='my-image' />
-                    <div className='regular-text' style={{ fontSize: '0.7em' }}>Елизабет, основател и консултант</div>
+                    <div className='regular-text' style={{ fontSize: '0.7em' }}>Михаела, основател и консултант</div>
                 </div>
 
                 <div className='about-text'>
@@ -19,7 +19,7 @@ const AboutUs = () => {
                         Здравейте!
                     </div>
                     <div className='regular-text'>
-                        Името ми е Елизабет и освен основател на <img src='/careflow-black.png' alt='CareFlow' style={{width: '7em', padding: '0em 0.3em 0 0.3em'}}/> съм един от милионите хора по света, чието качество на живот е било повлияно от психологическо разстройство. Всъщност от цели 3 такива!
+                        Името ми е Михаела и освен основател на <img src='/careflow-black.png' alt='CareFlow' style={{width: '7em', padding: '0em 0.3em 0 0.3em'}}/> съм един от милионите хора по света, чието качество на живот е било повлияно от психологическо разстройство. Всъщност от цели 3 такива!
                         След дългогодишна битка и всевъзможни неуспешни методи и терапии успях да се възстановя напълно.
 
                     </div>
